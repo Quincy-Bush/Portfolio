@@ -26,7 +26,8 @@ body {
   padding: 16px;
 }
 .sticky {
-  position: fixed;
+  z-index: 1;
+  position: sticky;
   top: 0;
   width: 100%
 }
@@ -132,6 +133,22 @@ footer {
          Are you interested in having this service provided for you, I am available at <a href="Quincy.m.bush@gmail.com">Quincy.M.Bush@gmail.com</a>.<br>
          
          </address>
+
+
+	<script>
+          window.onscroll = function() {myFunction()};
+          
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+      </script>
 	
    </body>
 </html>
