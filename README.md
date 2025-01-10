@@ -12,8 +12,8 @@ This project utilizes multiple programming languages, Github repositories and Gi
 Quincy Bush
 
 
- [https://www.linkedin.com/in/quincy-bush/]()
- [quincy.m.bush@gmail.com]()
+ [LinkedIn](https://www.linkedin.com/in/quincy-bush/)
+ [quincy.m.bush@gmail.com](https://www.linkedin.com/in/quincy-bush/)
 
 
 
