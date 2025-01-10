@@ -13,7 +13,7 @@ Quincy Bush
 
 
  * [LinkedIn](https://www.linkedin.com/in/quincy-bush/)
- * [quincy.m.bush@gmail.com]
+ * quincy.m.bush@gmail.com
 
 
 
