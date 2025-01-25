@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quincy Bush</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 10px 16px;
+  background: #555
+}
+.bar {
+  
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  list-style: none;
+  padding: 5px 7px;
+  font-size: 20px;
+  
+}
+
+.bar li {
+  height: 100%;
+  width: 240px;
+  border-right: 1px solid rgb(237, 162, 22);
+}
+
+.bar li a {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.bar .has-dropdown ul li a{
+padding: 12px 0;
+}
+
+.bar li a:hover {
+  background-color: rgb(191, 70, 215);
+  color: white;
+}
+
+.bar li a.active {
+  background-color: rgb(191, 70, 215);
+  color: white;
+}
+
+.dropdown {
+  background-color: burlywood;
+  padding: 0;
+  list-style: none;
+  display: none;
+  font-size: 16px;
+  text-indent: 20px;
+}
+
+.bar li.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+body {
+  margin-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+  background-color: burlywood;
+  color:rgb(191, 70, 215);
+  
+  
+}
+.top-container {
+  background-color: rgb(191, 70, 215);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the header */
+
+
+.sticky {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+.button {
+  width: 370px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: rgb(7, 193, 137);
+  color: white;
+  border: 10px outset rgb(237, 162, 22);
+  cursor: pointer;
+  transition: transform 150ms,
+    font-size 150ms, color 150ms;
+}
+
+.button:active {
+  background-color: rgb(7, 193, 137);
+  font-size: 35px;
+  transform: scale(1.7);
+  box-shadow: 10px 15px 20px rgb(191, 70, 215);
+
+}
+
+article {
+  float: left;
+  padding: 48px 40px;
+  width: 70%;
+  background-color: bisque;
+  height: auto;
+  text-align:left ;
+  list-style: square;
+   /* only for demonstration, should be removed */
+}
+ 
+article li {
+  font-size: 20px;
+  color: #000000;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+  float: right;
+  
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: auto;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+  
+</style>
+</head>
+<body>
+
+
+  <div class="header" id="myHeader">
+    <nav>
+    <ul class="bar">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">Relevant<br>Projects</a>
+        <ul class="dropdown">
+          <li> <a href="IntPort.html" > Interactive Portfolio project ; Dec 2024 - present</a></li>
+          <li> <a href="AdministrativeAssist.html" > Independent Administrative Assistant ; March 2024 - Present</a></li>
+          <li> <a href="IterativeGraphicsGames.html" > Iterative Computer Graphics & Games ; Fall 2023</a></li>
+          <li> <a href="PuzzleBox.html" >  Puzzle Box A.K.A The Bomb Defuse ; Spring 2022</a></li>
+          <li> <a href="DroneShare.html" > Drone Rideshare/ Driverless Uber ; Fall 2022</a></li>
+          <li> <a href="BDPA.html" > Commemorative Data Processing & Software Engineering Program ; Summer 2013 - Frequently revisited</a></li>
+          
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Contacts</a>
+        <ul class="dropdown">
+          <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail.com</a></li>
+          <li><a href="#">Phone:<br>507/884/9868</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank"> LinkedIN</a>
+        <li><a href="Recommendation.html" > Letter of <br>Recommendation</a></li>
+    </ul>
+    </nav>
+  </div>
+ 
+  <article>
+    <h2>This page contains numerous projects that I've completed for a UMN course, 4611: programming iterative graphics and games.<br>
+      With these projects I've developed an understanding of concepts and algorithms necessary for programming computer graphics.
+      <br>This includes identifying and solving issues with multi-dimensional graphics, writing shader programs, implementing real time computer-graphics and user interfaces for graphics interactions.
+      <br> This required: 
+    </h2>
+    <ul>
+    <li> Knowledge and experience in TypeScript to expand on JavaScript variable type definitions, function parameters and return values to allow classes, objects and systems to be defined and implemented.<br></li>
+    <li> The ability to learn and adapt quickly to UMN computer graphics software library, GopherGfx, to analyze, create and edit computer graphics through the JavaScript API webGL.<br> </li>
+    <li> Experience in HTML for canvas and element packaging, styling or scripting in the user interface, and scene environment<br></li>
+    </ul>
+        
+
+    <h2> Text Rain: Interactive Art installation</h2>
+    <ul>
+    <li>This project focuses on using the GopherGfx TypeScript library to accept, interpet and edit 2D graphic, image space, and scene space coordinates to deliver a 
+      version of<a href="http://camilleutterback.com/projects/text-rain/"  target = "_blank" > Camille Utterback's interactive art installation</a>.</li>
+      <li> It works by building a simple 2D object that will have the GopherGfx's text class applied as its texture 
+         and then interprets user inputs via camera or video file, and updates the coordinates of the text object based on changes in color values.. 
+    </li>
+    </ul>
+    Feel free to click the link <a href="https://csci-4611-fall-2023.github.io/assignment-1-bush0405/" target="_blank"> here</a> and try it for yourself! 
+
+
+    <h2> Hole in the Ground: interactive 3D video game</h2>
+    <ul>
+    <li>This project uses the GopherGfx library with Typescript to build an interactive 3D graphics program
+       inspired by a 2018 physics puzzle game <a href="https://www.donutcounty.com/"  target = "_blank" > Donut County</a> </li>
+      <li>  This program calculates 3D points, vectors, and geometric transformations to determine the proper logic 
+          for interaction with the game enviorment and physics between 3 dimension objects.  
+    </li>
+    </ul>
+    Feel free to click the link <a href="https://csci-4611-fall-2023.github.io/assignment-2-bush0405/" target="_blank"> here</a> and try it for yourself! 
+
+
+
+    <h2> Earthquake Visualization: Geospatial data visualization </h2>
+    <ul>
+    <li>This project uses the GopherGfx library to build 3 dimensional program simulating location and magnitude of earthquakes across history on a 2D map capable of being transformed into a 3D globe through the user interface.</li>
+      <li> The program applies texture mapping to 3D objects to create the map and globe visualization while algorithms work to convert spherical coordinates to cartesianal,
+           define vectors and texture coordiantes and reformation of 3D polygon models based on interaction with the user interface.
+    </li>
+    </ul>
+    Feel free to click the link <a href="https://csci-4611-fall-2023.github.io/assignment-3-bush0405/" target="_blank"> here</a> and try it for yourself! 
+
+
+
+    <h2> Artistic Rendering: Real-time GLSL shading</h2>
+    <ul>
+    <li>This project uses the GopherGfx library to calculate and render a wide range of lighting effects using GLSL in real time based on selections made in the user interface.</li>
+      <li> This program works to calculate, create and modify viewpoint based lighting effects, specifically
+           lighting and normals per-pixel values to determine the complexity of the surface and interaction with lighting.
+    </li>
+    </ul>
+    Feel free to click the link <a href="https://csci-4611-fall-2023.github.io/assignment-5-bush0405/" target="_blank"> here</a> and try it for yourself! 
+    
+    
+ 
+ 
+  </article>
+   <section::after>
+       
+   <a href="../index.html"> <img src="../pictures/HeadSHot.jpg" alt ="HeadShot" width="370" height="253"></a>
+
+   Click the buttons below to download the zip files for:
+   <a href="../zip files/TextRain-bush.zip" target = "_blank" > 
+          <button class="button"> Text Rain </button>
+    </a>
+    <a href="../zip files/HoleInTheGround-bush.zip" target = "_blank" > 
+          <button class="button"> Hole in the Ground </button>
+    </a>
+    <a href="../zip files/EarthquakeViz-bush.zip" target = "_blank" > 
+          <button class="button"> Earthquake Visualization </button>
+    </a>
+    <a href="../zip files/GLSLShading-bush.zip" target = "_blank" > 
+          <button class="button"> Real-time GLSL Shading </button>
+    </a>
+    
+
+        
+    
+
+   </section::after>
+    
+     
+     
+     
+     
+        
+       <footer> 
+       <address>
+        Available at <a href="Quincy.m.bush@gmail.com">Quincy.M.Bush@gmail.com</a>.<br>
+         
+        </address> 
+      </footer>
+	
+         <script>
+          window.onscroll = function() {myFunction()};
+          
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+      </script>
+   </body>
+</html>

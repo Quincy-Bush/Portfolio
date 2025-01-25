@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quincy Bush</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 10px 16px;
+  background: #555
+}
+.bar {
+  
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  list-style: none;
+  padding: 5px 7px;
+  font-size: 20px;
+  
+}
+
+.bar li {
+  height: 100%;
+  width: 240px;
+  border-right: 1px solid rgb(237, 162, 22);
+}
+
+.bar li a {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.bar .has-dropdown ul li a{
+padding: 12px 0;
+}
+
+.bar li a:hover {
+  background-color: rgb(191, 70, 215);
+  color: white;
+}
+
+.bar li a.active {
+  background-color: rgb(191, 70, 215);
+  color: white;
+}
+
+.dropdown {
+  background-color:burlywood;
+  padding: 0;
+  list-style: none;
+  display: none;
+  font-size: 16px;
+  text-indent: 20px;
+}
+
+.bar li.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+body {
+  margin-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+  background-color: burlywood;
+  color:rgb(191, 70, 215);
+  
+  
+}
+.top-container {
+  background-color: rgb(191, 70, 215);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the header */
+
+
+.sticky {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+
+
+article {
+  float: left;
+  padding: 48px 40px;
+  width: 70%;
+  background-color: bisque;
+  height: auto;
+  text-align:left ;
+  list-style: square;
+   /* only for demonstration, should be removed */
+}
+ 
+article li {
+  font-size: 20px;
+  color: #000000;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+  float: right;
+  
+  
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: auto;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+  
+</style>
+</head>
+<body>
+  <!-- former welcome bar -->
+
+  <div class="header" id="myHeader">
+    <nav>
+    <ul class="bar">
+      <li><a href="../index.html" class="active">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">Relevant<br>Projects</a>
+        <ul class="dropdown">
+          <li> <a href="IntPort.html" > Interactive Portfolio project ; Dec 2024 - present</a></li>
+          <li> <a href="AdministrativeAssist.html" > Independent Administrative Assistant ; March 2024 - Present</a></li>
+          <li> <a href="IterativeGraphicsGames.html" > Iterative Computer Graphics & Games ; Fall 2023</a></li>
+          <li> <a href="PuzzleBox.html" >  Puzzle Box A.K.A The Bomb Defuse ; Spring 2022</a></li>
+          <li> <a href="DroneShare.html" > Drone Rideshare/ Driverless Uber ; Fall 2022</a></li>
+          <li> <a href="BDPA.html" > Commemorative Data Processing & Software Engineering Program ; Summer 2013 - Frequently revisited</a></li>
+          
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Contacts</a>
+        <ul class="dropdown">
+          <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail.com</a></li>
+          <li><a href="#">Phone:<br>507/884/9868</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank"> LinkedIN</a>
+        <li><a href="Recommendation.html" > Letter of <br>Recommendation</a></li>
+    </ul>
+    </nav>
+  </div>
+ 
+  <article>
+    <h2>BDPA is a computer coding program taking place in the summer, designed as an opportunity to be grant the knowledge needed to purse computer science. <br>
+      I initially attended from 2013 to 2015 and since have continue to use the skills and resources offered to me via the program.
+      These including:
+    </h2>
+    <ul>
+    <li>  Experience with HTML, CSS, Javascript, PHP, MySQL to revisit alongside academic work</li>
+    <li>  Self-paced labs providing examples of common tasks done in several coding languages </li>
+    <li> Detailed projects providing the transferable skills and knowledge in preparation towards applicable careers such as:</li>
+    <li> Database Administrator : Executing SQL Commands and coding in PHP to create databases, tables, users, update and insert records and assign authorities & privileges.</li>
+    <li> Full Stack or Front-End Web Developer: Coding in CSS, HTML, and Javascript to create responsive & interactive websites, utilizing front & back-end programming knowledge to program browsers servers and databases.</li>
+    </ul>
+
+      
+     <h2>Feel free to click the link below or the picture on the right to learn more about BDPA and what the program has offered.<br>
+      <ul><a href="https://bdpa.site-ym.com/" target="_blank"> Black Data Processing Associates</a></ul>
+     </h2>
+    
+    
+    
+ 
+ 
+  </article>
+   <section::after>
+
+   <a href="../index.html"> <img src="../pictures/HeadSHot.jpg" alt="HeadShot" width="370" height="253"></a>
+
+   <a href="https://betf.blogspot.com/2013/11/bdpa-southern-minnesota-sites-program.html" target="_blank">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8VmTwG90u4Zk_0EV-EmnzhmGlU0O7N6eOxHUl3ijBzm9GlNeXHDnLm2l-eMx9Q1yRZ1WF48zj-3zQnfEdXSrr53hpjAZSXG_JW7IWiIneNN64k5M0VCPbyQlmoto7ADKj4NNzwGVJJfc/s1600/SITES-SMN-2013.jpg" alt="BDPA Early Years" width="370" height="522">
+
+   </a>
+   </section::after>
+    
+     
+     
+     
+     
+        
+       <footer> 
+       <address>
+        Available at <a href="Quincy.m.bush@gmail.com">Quincy.M.Bush@gmail.com</a>.<br>
+         
+        </address> 
+      </footer>
+	
+         <script>
+          window.onscroll = function() {myFunction()};
+          
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+      </script>
+   </body>
+</html>

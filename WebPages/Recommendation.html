@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quincy Bush</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding: 10px 16px;
+  background: #555
+}
+.bar {
+  
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  list-style: none;
+  padding: 5px 7px;
+  font-size: 20px;
+  
+}
+
+.bar li {
+  height: 100%;
+  width: 240px;
+  border-right: 1px solid rgb(237, 162, 22);
+}
+
+.bar li a {
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.bar .has-dropdown ul li a{
+padding: 12px 0;
+}
+
+.bar li a:hover {
+  background-color: rgb(191, 70, 215);
+  color: white;
+}
+
+.bar li a.active {
+  background-color: rgb(191, 70, 215);
+  color: white;
+}
+
+.dropdown {
+  background-color: burlywood;
+  padding: 0;
+  list-style: none;
+  display: none;
+  font-size: 16px;
+  text-indent: 20px;
+}
+
+.bar li.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+body {
+  margin-left: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-indent: 0px;
+  background-color: burlywood;
+  color:rgb(191, 70, 215);
+  
+  
+}
+.top-container {
+  background-color: rgb(191, 70, 215);
+  padding: 30px;
+  text-align: center;
+}
+
+/* Style the header */
+
+
+.sticky {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+
+
+article {
+  float: left;
+  padding: 33px 40px;
+  width: 35%;
+  background-color: bisque;
+  height: auto;
+  text-align:left ;
+  text-indent: 20px;
+   
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  height: auto;
+  
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: auto;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+  
+</style>
+</head>
+<body>
+  
+
+
+  <div class="header" id="myHeader">
+    <nav>
+    <ul class="bar">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="has-dropdown">
+        <a href="#">Relevant<br>Projects</a>
+        <ul class="dropdown">
+          <li> <a href="IntPort.html" > Interactive Portfolio project ; Dec 2024 - present</a></li>
+          <li> <a href="AdministrativeAssist.html" > Independent Administrative Assistant ; March 2024 - Present</a></li>
+          <li> <a href="IterativeGraphicsGames.html" > Iterative Computer Graphics & Games ; Fall 2023</a></li>
+          <li> <a href="PuzzleBox.html" >  Puzzle Box A.K.A The Bomb Defuse ; Spring 2022</a></li>
+          <li> <a href="DroneShare.html" > Drone Rideshare/ Driverless Uber ; Fall 2022</a></li>
+          <li> <a href="BDPA.html" > Commemorative Data Processing & Software Engineering Program ; Summer 2013 - Frequently revisited</a></li>
+          
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="#">Contacts</a>
+        <ul class="dropdown">
+          <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail.com</a></li>
+          <li><a href="#">Phone :507-884-9868</a></li>
+          
+        </ul>
+      </li>
+      <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank"> LinkedIN</a></li>
+      <li><a href="Recommendation.html" > Letter of <br>Recommendation</a></li>
+
+    </ul>
+    </nav>
+  </div>
+  
+
+
+
+<article>
+  
+  <a href="../index.html"> <img src="../pictures/HeadSHot.jpg" alt="HeadShot" width="350" height="233"></a>
+   <h2>About Me:</h2> 
+  <h1>I am a recent graduate of the University of Minnesota and aspiring Front-end Software Engineer.<br> 
+    My interest in computer science began with video games at a young age,<br> and expanded as I learned to build computers, write programs, and more as I grew older.</h1>
+    <h1>I've spent most of my adult life in service, and I am looking forward to applying my knowledge and experience to lead me to a successful career in software development. </h1>
+    <h1>If you're interested, feel free to explore Portfolio to learn more! </h1>
+  
+
+ </article>
+
+  <section::after>
+   
+   <img src="../pictures/Reccomendation-Quincy Bush.jpg" alt="Reccomendation-Quincy" width="800" height="1000">
+   
+   
+
+  </section::after>
+  
+  
+   
+    
+    
+    
+    
+       
+       
+  <footer> 
+    <address>
+     Available at <a href="Quincy.m.bush@gmail.com">Quincy.M.Bush@gmail.com</a>.<br>
+     Copyright © 2023 Quincy Bush — All Rights Reserved.<br>
+      
+     </address> 
+   </footer>
+  <script>
+          window.onscroll = function() {myFunction()};
+          
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+      </script>
+          
+
+
+	
+   </body>
+</html>
