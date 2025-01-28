@@ -6,7 +6,7 @@ Simple overview of its use/purpose.
 
 An interactive program meant to demonstrate knowledge and use of the programming languages Javascript, Json,HTML, CSS. Doing so with the goal of portraying a competent and desirable skillset for the consideration of potential employers. 
 
-Instructions for running your own version of this program can be followed below alongside the [DEPLOY.MD](DEPLOY.MD).
+Instructions for running your own version of this program can be followed below alongside the [DEPLOY.MD](DEPLOY.md).
 
 # How to run
 
@@ -24,7 +24,7 @@ Note: You will need `Node.js` and `npm` installed on your machine via the follow
 
 # How to host?
 
-Here is a [guide](DEPLOY.MD).
+Here is a [guide](DEPLOY.md).
 
 
 
