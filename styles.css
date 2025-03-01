@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+
+  }
+  .header {
+    padding: 10px 16px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  .bar {
+    
+    position: relative;
+    top: 0;
+    background-color: linear-gradient(to right, #6a11cb, #2575fc);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    list-style: none;
+    padding: 5px 7px;
+    font-size: auto;
+    border: 10px outset rgb(18, 199, 172);
+    text-align: center;
+    
+    
+  }
+  
+  .bar li {
+    height: 100%;
+    width: 240px;
+    text-align: center;
+    
+  }
+  
+  .bar li a {
+    color: aquamarine;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .bar .has-dropdown ul li a{
+  background: linear-gradient(to left, #6a11cb, #2575fc);
+  padding: 10px 0;
+  color:aquamarine;
+  text-align: left;
+  font-size: auto;
+  border: 10px inset rgb(18, 199, 172);
+  
+  }
+  
+  .bar li a:hover {
+    background: linear-gradient(to top, #6a11cb, #2575fc);
+    box-shadow: 0 5px 20px rgb(18, 199, 172);
+    color: burlywood;
+    border: 10px inset rgb(18, 199, 172);
+    text-align: center;
+    
+    
+  }
+  
+  .bar li a.active {
+    
+    color: aquamarine;
+  }
+  
+  .dropdown {
+    background-color: rgb(18, 199, 172);
+    padding: 0;
+    list-style: none;
+    display: none;
+    font-size: auto;
+    text-indent: 10px;
+    border: 10px outset rgb(18, 199, 172);
+    text-align: center;
+    
+  }
+  
+  .bar li.has-dropdown:hover .dropdown {
+    display: block;
+    background: linear-gradient(to top, #6a11cb, #2575fc);
+  }
+  
+  body {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-indent: 0px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color:aquamarine;
+    
+    
+  }
+  .container {
+    
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+  }
+  
+  /* Style the header */
+
+
+  .hero{
+    text-align: center;
+    padding: 50px 0; 
+    font-size: xx-large;
+    
+    
+    
+    color:aquamarine;
+  }
+  :root {
+    --width:350px;
+    --height:calc(var(--width) / 2);
+  }
+  .profile-pic{
+    width: 350px;
+    height:233px;
+    border-radius: 50%;
+    border: 10px outset rgb(18, 199, 172);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position:absolute;
+    
+    animation: toRight linear 6.8s infinite alternate, bounce linear 17s infinite alternate;
+  }
+  .profile-pic:hover {
+    animation-play-state: paused;
+    
+    
+    
+  }
+  @keyframes bounce {
+    0% {
+      top:0;
+    }
+    48% {
+    }
+    50% {
+      top: calc(300% - var(--height));
+    }
+    52% {
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  @keyframes toRight {
+  
+    0% {
+      left: 0;
+    }
+  
+    100% {
+      left: calc(100% - var(--width));
+    }
+  }
+
+  .name{
+    font-size: 2.5em;
+    margin: 20px 10px;
+
+  }
+  .tagline{
+
+    font-style:italic;
+
+  }
+
+  .about{
+    padding: 0px 0;
+    text-align: center;
+    
+    color: aquamarine;
+    font-size: 27px;
+  }
+  .resume{
+    padding: 00px 0;
+    text-align: left;
+    
+  }
+
+  .skills{
+    
+    padding: 10px 0;
+  }
+  .skills-list{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px
+
+  }
+  .skill{
+    background: #6a11cb;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgb(18, 199, 172);
+    animation: pop 0.8s ease-in-out infinite alternate;
+
+  }
+
+  @keyframes pop{
+    from{
+        transform: scale(1);
+    }to{
+        transform: scale(1.1);
+    }
+
+  }
+
+
+  .projects{
+    padding: 40px 0;
+    text-align: center;
+    
+    
+    
+  }
+
+
+  .project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+    
+  }
+
+  .project{
+    background: #6a11cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgb(18, 199, 172);
+    transition: transform 0.3s ease;
+    border: 20px outset rgb(18, 199, 172);
+    color:rgb(18, 199, 172);
+    
+  }
+
+  .project:hover{
+    transform:translateY(-10px);
+    background:linear-gradient(to top, #6a11cb, #2575fc) ;
+    color:wheat;
+    border: 20px inset rgb(18, 199, 172);
+  }
+  .sticky {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%
+  }
+  article{
+    font-size: larger;
+    padding: 10px;
+
+  }
+  article li{
+    font-size: 35px;
+    padding:  0px 10px 10px;
+   /* padding: 0.5rem 1.5rem 1rem;
+	  */border-radius: 30px;
+	  background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    border-width: 100%;
+  }
+  article li + li{
+    margin-top: 1rem;
+  }
+  ::marker {
+    font-weight: 600;
+    color: aquamarine;
+    font-size: 0px;
+  }
+  article ul{
+    font-size: 25px;
+    padding:  0px 10px;
+    max-width: 100%;
+	  position: relative;
+  }
+  article ul ::before{
+    content: '';
+	  width: 0.0rem;
+	  height: 100%;
+	  position: absolute;
+	  top: 0;
+	  left: 8%;
+	  background: linear-gradient(to left, #6a11cb, #2575fc);
+	  z-index: -1;
+  }
+
+ 
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: #2575fc;
+    height: auto;
+    padding: 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  
+  
+  

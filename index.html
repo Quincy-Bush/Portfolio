@@ -1,144 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Quincy Bush</title>
+<title>Quincy's Portfolio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-.header {
-  padding: 10px 16px;
-  background: #555;
-}
-.bar {
-  
-  position: relative;
-  top: 0;
-  background-color: bisque;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  list-style: none;
-  padding: 5px 7px;
-  font-size: 20px;
-  
-}
+<link rel="stylesheet" href="styles.css">
 
-.bar li {
-  height: 100%;
-  width: 240px;
-  border-right: 1px solid rgb(237, 162, 22);
-}
-
-.bar li a {
-  color: black;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.bar .has-dropdown ul li a{
-padding: 12px 0;
-}
-
-.bar li a:hover {
-  background-color: rgb(191, 70, 215);
-  color: white;
-}
-
-.bar li a.active {
-  background-color: rgb(191, 70, 215);
-  color: white;
-}
-
-.dropdown {
-  background-color: burlywood;
-  padding: 0;
-  list-style: none;
-  display: none;
-  font-size: 16px;
-  text-indent: 20px;
-}
-
-.bar li.has-dropdown:hover .dropdown {
-  display: block;
-}
-
-body {
-  margin-left: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-indent: 0px;
-  background-color: burlywood;
-  color:rgb(191, 70, 215);
-  
-  
-}
-.top-container {
-  background-color: rgb(191, 70, 215);
-  padding: 30px;
-  text-align: center;
-
-}
-
-/* Style the header */
-
-
-.sticky {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  width: 100%
-}
-
-
-article {
-  float: left;
-  padding: 20px 30px;
-  width: 35%;
-  background-color: bisque;
-  height: auto;
-  text-align:left ;
-  text-indent: 20px;
-   
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-  height: auto;
-  
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  height: auto;
-}
-
-
-
-@media (max-width: 600px) {
-  article,section::after {
-    width: 100%;
-    height: auto;
-  }
-}
-  
-</style>
-</head>
 <body>
   
-
 
   <div class="header" id="myHeader">
     <nav>
@@ -166,7 +35,12 @@ footer {
         </ul>
       </li>
       <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank"> LinkedIN</a></li>
+      
+      <li class="has-dropdown">
+        <a href="#">Resume and Recommendations</a>
+        <ul class="dropdown">
       <li><a href="WebPages/Recommendation.html" > Letter of <br>Recommendation</a></li>
+      <li><a href="WebPages/Resume.html" > Resume</a></li>
 
     </ul>
     </nav>
@@ -174,28 +48,127 @@ footer {
   
 
 
-
-<article>
+  <header class ="hero">
+    <div class="container">
+      <div class="profile">
+        <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank"><img src="pictures/HeadSHot.jpg" alt="HeadShot" class="profile-pic">
+        </a><h1 class ="name"> Quincy</h1>
+        <p class="tagline"> Aspiring Software Engineer</p>
+      </div>
+    </div>
+  </header>
   
-  <a href="index.html"> <img src="pictures/HeadSHot.jpg" alt="HeadShot" width="350" height="233"></a>
+
+
+<section class="about">
+  <div class ="container">
+  
    <h2>About Me:</h2> 
-  <h1>I am a recent graduate of the University of Minnesota(Spring 2024) and an aspiring Software Engineer.<br> 
-    My interest in computer science began with video games at a young age,<br> and expanded as I learned to build computers, write programs, and more as I grew older.</h1>
-    <h1>I've spent most of my adult life in service, and I am looking forward to applying my knowledge and experience to lead me to a successful career in software development. </h1>
-    <h1>If you're interested, feel free to explore my online portfolio to learn more! </h1>
+  <p>
+    I am a recent graduate of the University of Minnesota(Spring 2024) and an aspiring Software Engineer.
+    <br>My interest in computer science began with video games at a young age,
+    <br> and have expanded as I learned to build computers, write programs, and so more as I grew older. 
+    <br>I've spent most of my adult life in service, and I am looking forward to applying my knowledge and experience to lead me to a successful career in software development. 
+    <br>If you're interested, feel free to explore my online portfolio to learn more! 
+  </p>
   
+  </div>
+</section>
 
- </article>
 
-  <section::after>
+  <section class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill"> HTML</div>
+        <div class="skill"> CSS</div>
+        <div class="skill"> C++</div>
+        <div class="skill"> C</div>
+        <div class="skill"> C#</div>
+        <div class="skill"> JavaScript</div>
+        <div class="skill"> Java</div>
+        <div class="skill"> Json</div>
+        <div class="skill"> Typscript</div>
+        <div class="skill"> Node.js</div>
+        <div class="skill"> MySQL</div>
+        <div class="skill"> PHP</div>
+        <div class="skill"> x86-64 Assembly Language</div>
+        <div class="skill"> UML</div>
+        <div class="skill"> Compute/Machine Architecture</div>
+        <div class="skill"> Mathematics & Discrete Structures<br> thereof</div>
+        <div class="skill"> Data Visualization</div>
+        <div class="skill"> Application Programming Interfaces</div>
+        <div class="skill"> Object Oriented Programming</div>
+        <div class="skill"> UI/UX </div>
+        <div class="skill"> Machine Learning</div>
+        <div class="skill"> Intergrated Development Environments</div>
+        <div class="skill"> Virtual Machines and Emulation</div>
+        
+        
+      </div>
+    </div>
+  </section>
+      
    
-   <img src="pictures/Resume(jan 28th).jpg" alt="Resume-Quincy-Bush" width="802" height="1004">
-   
-   
+  <section class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        
+        
+        <a href="https://quincy-bush.github.io/Interactive-Portfolio/" target = "_blank" > 
+        
+        <div class="project"> <h3>Interactive Portfolio</h3> 
+          <p>
+            An iterative graphics program to showcase skills and past projects.
+          </p>
+        </div>
+      </a>
 
-  </section::after>
-  
-  
+      <a href="https://quincy-bush.github.io/Portfolio/WebPages/AdministrativeAssist.html" target = "_blank" > 
+        
+        <div class="project"> <h3>Administrative Assistant</h3> 
+          <p>
+            Designed and reform email and sms content formats and deliver as an unpaid consultant.
+          </p>
+        </div>
+      </a>
+      <a href="https://quincy-bush.github.io/Portfolio/WebPages/IterativeGraphicsGames.html" target = "_blank" > 
+        
+        <div class="project"> <h3>Iterative Graphics Projects</h3> 
+          <p>
+            A collection of iterative graphics programs of showcasing proficency and time managment in the 
+            aformentioned field.
+          </p>
+        </div>
+      </a>
+
+      <a href="https://quincy-bush.github.io/Portfolio/WebPages/PuzzleBox.html" target = "_blank" > 
+        <div class="project"> <h3>Puzzle Box Debugging Bomb</h3> 
+          <p>
+            A project designed to develop further experience in GNU project debugger and C.
+          </p>
+        </div>
+      </a>
+      <a href="https://quincy-bush.github.io/Portfolio/WebPages/DroneShare.html" target = "_blank" > 
+        <div class="project"> <h3>Rideshare Simulation Project</h3> 
+          <p>
+            A UMN captsone project designed to teach the standard methodologies, business practices and time management for 
+            software development.
+          </p>
+        </div>
+      </a>
+      <a href="https://quincy-bush.github.io/Portfolio/WebPages/BDPA.html" target = "_blank" > 
+       
+        <div class="project"> <h3>Black Data Processing Associates</h3> 
+          <p>
+            A long-standing youth development program in which I learn the basics of computer science and programming.
+          </p>
+        </div>
+      </a>
+      </div>
+    </div>
+  </section>
    
     
     
@@ -210,23 +183,10 @@ footer {
       
      </address> 
    </footer>
-  <script>
-          window.onscroll = function() {myFunction()};
-          
-          var header = document.getElementById("myHeader");
-          var sticky = header.offsetTop;
-          
-          function myFunction() {
-            if (window.pageYOffset > sticky) {
-              header.classList.add("sticky");
-            } else {
-              header.classList.remove("sticky");
-            }
-          }
-      </script>
+  
           
 
-
+   <script src="script.js"></script>
 	
    </body>
 </html>

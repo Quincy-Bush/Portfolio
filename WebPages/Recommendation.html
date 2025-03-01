@@ -1,140 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Quincy Bush</title>
+<title>Letter of Recommendation</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-.header {
-  padding: 10px 16px;
-  background: #555
-}
-.bar {
-  
-  position: sticky;
-  top: 0;
-  background-color: bisque;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  list-style: none;
-  padding: 5px 7px;
-  font-size: 20px;
-  
-}
-
-.bar li {
-  height: 100%;
-  width: 240px;
-  border-right: 1px solid rgb(237, 162, 22);
-}
-
-.bar li a {
-  color: black;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.bar .has-dropdown ul li a{
-padding: 12px 0;
-}
-
-.bar li a:hover {
-  background-color: rgb(191, 70, 215);
-  color: white;
-}
-
-.bar li a.active {
-  background-color: rgb(191, 70, 215);
-  color: white;
-}
-
-.dropdown {
-  background-color: burlywood;
-  padding: 0;
-  list-style: none;
-  display: none;
-  font-size: 16px;
-  text-indent: 20px;
-}
-
-.bar li.has-dropdown:hover .dropdown {
-  display: block;
-}
-
-body {
-  margin-left: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-indent: 0px;
-  background-color: burlywood;
-  color:rgb(191, 70, 215);
-  
-  
-}
-.top-container {
-  background-color: rgb(191, 70, 215);
-  padding: 30px;
-  text-align: center;
-}
-
-/* Style the header */
-
-
-.sticky {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  width: 100%
-}
-
-
-article {
-  float: left;
-  padding: 33px 40px;
-  width: 35%;
-  background-color: bisque;
-  height: auto;
-  text-align:left ;
-  text-indent: 20px;
-   
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-  height: auto;
-  
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  height: auto;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-
-
-@media (max-width: 600px) {
-  article,section::after {
-    width: 100%;
-    height: auto;
-  }
-}
-  
-</style>
+<link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   
@@ -165,7 +35,11 @@ footer {
         </ul>
       </li>
       <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank"> LinkedIN</a></li>
+      <li class="has-dropdown">
+        <a href="#">Resume and Recommendations</a>
+        <ul class="dropdown">
       <li><a href="Recommendation.html" > Letter of <br>Recommendation</a></li>
+      <li><a href="Resume.html" > Resume</a></li>
 
     </ul>
     </nav>
@@ -174,26 +48,28 @@ footer {
 
 
 
-<article>
-  
-  <a href="../index.html"> <img src="../pictures/HeadSHot.jpg" alt="HeadShot" width="350" height="233"></a>
-   <h2>About Me:</h2> 
-  <h1>I am a recent graduate of the University of Minnesota and aspiring Front-end Software Engineer.<br> 
-    My interest in computer science began with video games at a young age,<br> and expanded as I learned to build computers, write programs, and more as I grew older.</h1>
-    <h1>I've spent most of my adult life in service, and I am looking forward to applying my knowledge and experience to lead me to a successful career in software development. </h1>
-    <h1>If you're interested, feel free to explore Portfolio to learn more! </h1>
   
 
- </article>
+  <section class="resume">
+    <div class="container">
+      <h2>Letter of Recommendation</h2>
+      <p>
+        <img src="../pictures/Reccomendation-Quincy Bush.jpg" alt="Recommendation" width="802" height="1004">
+      </p>
+     
+    </div>
 
-  <section::after>
-   
-   <img src="../pictures/Reccomendation-Quincy Bush.jpg" alt="Reccomendation-Quincy" width="800" height="1000">
-   
-   
-
-  </section::after>
+  </section>
   
+  <header class ="hero">
+    <div class="container">
+      <div class="profile">
+        <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank"><img src="../pictures/HeadSHot.jpg" alt="HeadShot" class="profile-pic">
+        </a><h1 class ="name"> Quincy</h1>
+        <p class="tagline"> Aspiring Software Engineer</p>
+      </div>
+    </div>
+  </header>
   
    
     
