@@ -182,6 +182,8 @@
   .resume{
     padding: 00px 0;
     text-align: left;
+    width: auto;
+    height: auto;
     
   }
 
