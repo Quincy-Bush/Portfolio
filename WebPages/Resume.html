@@ -1,95 +1,124 @@
+<!-- Recommendations for Resume.html styling and presentation:
+
+1. Use a clean, professional font (e.g., 'Segoe UI', Arial, sans-serif).
+2. Add more whitespace and padding for readability.
+3. Use a card or panel for the resume content to make it stand out.
+4. Highlight your name and title at the top.
+5. Use clear section headings with icons or subtle color.
+6. Add a horizontal rule or divider between sections.
+7. Use bullet points for skills and experience for easy scanning.
+8. Add subtle hover effects for links.
+9. Make contact info easily accessible at the top.
+10. Consider a two-column layout for skills/education vs. experience.
+11. Add a downloadable PDF resume link/button.
+12. Use consistent spacing and alignment.
+13. Add a favicon for branding.
+14. Ensure mobile responsiveness.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Resume - Quincy Bush</title>
+  <title>Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <!-- Navigation/Header -->
+  <!-- ...existing navigation/header code... -->
   <div class="header" id="myHeader">
     <nav>
       <ul class="bar">
-        <li><a href="../index.html" class="active">Home</a></li>
+        <li class="home"><a href="../index.html" >Home</a></li>
         <li class="has-dropdown">
-          <a href="#">Relevant<br>Projects</a>
+          <a href="#">Projects</a>
           <ul class="dropdown">
             <li><a href="IntPort.html">Interactive Portfolio Project ; Dec 2024 - Present</a></li>
             <li><a href="AdministrativeAssist.html">Independent Administrative Assistant ; March 2024 - Present</a></li>
-            <li><a href="IterativeGraphicsGames.html">Iterative Computer Graphics & Games ; Fall 2023</a></li>
-            <li><a href="PuzzleBox.html">Puzzle Box A.K.A The Bomb Defuse ; Spring 2022</a></li>
-            <li><a href="DroneShare.html">Drone Rideshare/Driverless Uber ; Fall 2022</a></li>
+            <li><a href="InteractiveGraphicsGames.html">Interactive Computer Graphics & Games ; Fall 2023</a></li>
             <li><a href="BDPA.html">Commemorative Data Processing & Software Engineering Program ; Summer 2013 - Frequently revisited</a></li>
           </ul>
         </li>
         <li class="has-dropdown">
           <a href="#">Contacts</a>
           <ul class="dropdown">
-            <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail.com</a></li>
-            <li><a href="#">Phone:<br>507/884/9868</a></li>
+            <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail</a></li>
+            <li><a href="tel:5078849868">Phone:<br>507/884/9868</a></li>
           </ul>
         </li>
         <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank">LinkedIn</a></li>
         <li class="has-dropdown">
-          <a href="#">Resume and Recommendations</a>
+          <a href="#" class="active">Resume and Recommendations</a>
           <ul class="dropdown">
-            <li><a href="Recommendation.html">Letter of <br>Recommendation</a></li>
-            <li><a href="Resume.html">Resume</a></li>
+            <li><a href="../pictures/recommendation-Quincy Bush.jpg" target="_blank">Letter of <br>Recommendation</a></li>
+            <li><a href="Resume.html" class="active">Resume</a></li>
           </ul>
         </li>
       </ul>
     </nav>
   </div>
 
-  <!-- Main Content -->
-  <article>
-    <h2>Resume - Quincy Bush</h2>
-    <p>
-      <strong>Email:</strong> <a href="mailto:Quincy.m.bush@gmail.com">Quincy.m.bush@gmail.com</a><br>
-      <strong>Phone:</strong> 507-884-9868<br>
-      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/quincy-bush/" target="_blank">linkedin.com/in/quincy-bush</a>
-    </p>
-    <h3>Education</h3>
-    <ul>
-      <li>Bachelor of Science in Computer Science (Expected 2025)</li>
-      <li>Relevant Coursework: Software Engineering, Computer Graphics, Data Structures</li>
-    </ul>
-    <h3>Experience</h3>
-    <ul>
-      <li>Independent Administrative Assistant, Transmission Music (2024 - Present)</li>
-      <li>Software Engineering Intern, [Company Name] (2023)</li>
-      <li>Participant, BDPA Data Processing Program (2013 - Present)</li>
-    </ul>
-    <h3>Skills</h3>
-    <ul>
-      <li>Programming: Python, JavaScript, HTML, CSS, C++</li>
-      <li>Web Development, UI/UX Design, Game Development</li>
-      <li>Teamwork, Communication, Problem-Solving</li>
-    </ul>
-  </article>
 
-  <!-- Profile Section -->
-  <header class="hero">
-    <div class="container">
-      <div class="profile">
-        <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank">
-          <img src="../pictures/HeadSHot.jpg" alt="HeadShot" class="profile-pic">
-        </a>
-        <h1 class="name">Quincy</h1>
-        <p class="tagline">Aspiring Software Engineer</p>
+  <!-- Resume Main Content Card -->
+  <div class="resume-container">
+    <!-- 4. Highlight your name and title at the top -->
+    <div class="resume-header">
+      <h1>Quincy Bush</h1>
+      <div class="tagline">Aspiring Software Engineer</div>
+      <!-- 9. Contact info at the top -->
+      <div class="resume-contact-info">
+        <span><a href="mailto:Quincy.m.bush@gmail.com">Quincy.m.bush@gmail.com</a></span>
+        <span><a href="tel:5078849868">507-884-9868</a></span>
+        <span><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank">LinkedIn</a></span>
       </div>
+      <!-- 11. Downloadable PDF resume link/button -->
+      <a class="download-btn" href="../pictures/Resume (feb 28th).pdf" target="_blank" download>Download PDF</a>
     </div>
-  </header>
 
-  <!-- Footer -->
+    <!-- 5. Clear section headings, 6. Divider between sections -->
+    <div>
+      <div class="resume-section-title">Education</div>
+      <ul class="section">
+        <li><strong>Bachelor of Arts in Computer Science</strong> [University of Minnesota] </li>
+        <ul class="section"><li>Relevant Coursework: Software Engineering, Computer Graphics, Data Structures,<br> Computer Architecture & infrastructure, Operating Systems, Probability & Statistics, & Calculus </li></ul>
+      </ul>
+    </div>
+    <div>
+      <div class="resume-section-title">Experience</div>
+      <ul class="section">
+        <li><strong>FOH Captain</strong>, [Surly Brewing Company] (Aug 2021 - Present)</li>
+        <ul class="section">
+          <li>Train, lead, and work alongside confident and efficient front of house employees to help provide nationally recognized service to our dining hall, pizza parlor, garden seating, sponsored events, caterings, concert events and conventions.</li>
+          <li>Help provide solutions and quality assurance to guests and coworkers across day to day operations in a fast-paced changing environment.</li>
+          <li>Work with other captains and management to coordinate changes to day to day and long term operations between FOH & BOH.</li>
+        </ul>
+        <li><strong>Enhanced Premise Technician</strong>, [Lumen] (May 2024 - Nov 2024)</li>
+        <ul>
+          <li>Responsible for installing, operating, maintaining, testing and repairing both field and in-home network telecommunication equipment for Lumen clientele. </li>
+          <li>Provided technical evaluations and delivered solutions needed to repair network infrastructure with fiber optic/power tools, proprietary software, training and knowledge of network infrastructure.</li>
+          <li>Completed designated amount of work in a specified timeframe with a high degree of quality with minimal supervision, adjusting work assignments or schedules to meet changing work-related priorities or demands.</li>
+        </ul>
+        <li><strong>SMS & Email Administrator</strong>, [Transmission Music Via Contract] (March 2024- July 2024)</li>
+        <ul>
+          <li>Helped developed and implemented solutions for automated email & SMS responses for various clientele services such as scheduling and equipment confirmation </li>
+          <li>Used HTML, XML and plain script to create and/or redefine the structure, content, accessibility, and frequency of client-end services such as emails, events, calendars and schedules,and both the client and employee portal interfaces</li>
+          <li>Set up and established connection to the company email for an SMTP relay system to forward and receive emails across different domains within DJ event planner</li>
+        </ul>
+        
+      </ul>
+    </div>
+    <div>
+      <div class="resume-section-title">Skills</div>
+      <ul class ="section">
+        <li><strong>Languages:</strong> Python, Java, Json, JavaScript, Typescript, HTML, C, CSS, C++</li>
+        <li><strong>Educational Competencies:</strong> Web development, AI & Machine Learning, Virtual Machines & Emulation, APIs, UI/UX Design</li>
+        <li><strong>Workplace Compentencies:</strong> Collaboration, Communication, Adaptability, Problem-Solving, Time Management, Customer Service, Critical & Analytical thinking, </li>
+      </ul>
+    </div>
+  </div>
   <footer>
-    <address>
-      Available at <a href="mailto:Quincy.m.bush@gmail.com">Quincy.M.Bush@gmail.com</a>.<br>
-    </address>
+    &copy; 2025 Quincy Bush &mdash; Portfolio. All rights reserved.
   </footer>
-
-  <!-- Scripts -->
   <script src="../script.js"></script>
+  <!-- ...existing profile/hero and footer code... -->
 </body>
-</html>

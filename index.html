@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <title>Quincy's Portfolio</title>
+</head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles.css">
@@ -10,75 +11,129 @@
   
 
   <div class="header" id="myHeader">
-    <nav>
+    <nav> 
     <ul class="bar">
-      <li><a href="index.html" class="active">Home</a></li>
+
+
+      <li class="home"><a href="index.html" class="active">Quincy Bush                   </a></li>
+
+
       <li class="has-dropdown">
-        <a href="#">Relevant<br>Projects</a>
+        <a href="#">Projects</a>
         <ul class="dropdown">
           <li> <a href="WebPages/IntPort.html" > Interactive Portfolio project ; Dec 2024 - present</a></li>
           <li> <a href="WebPages/AdministrativeAssist.html" > Independent Administrative Assistant ; March 2024 - Present</a></li>
-          <li> <a href="WebPages/IterativeGraphicsGames.html" > Iterative Computer Graphics & Games ; Fall 2023</a></li>
-          <li> <a href="WebPages/PuzzleBox.html" >  Puzzle Box A.K.A The Bomb Defuse ; Spring 2022</a></li>
-          <li> <a href="WebPages/DroneShare.html" > Drone Rideshare/ Driverless Uber ; Fall 2022</a></li>
-          <li> <a href="WebPages/BDPA.html" > Commemorative Data Processing & Software Engineering Program ; Summer 2013 - Frequently revisited</a></li>
-          
-          
+          <li> <a href="WebPages/InteractiveGraphicsGames.html" > Interative Computer Graphics & Games ; Fall 2023</a></li>
+          <li> <a href="WebPages/BDPA.html" > Commemorative Data Processing & Software Engineering Program ; Summer 2013 - Frequently revisited</a></li>  
         </ul>
       </li>
+
       <li class="has-dropdown">
-        <a href="#">Contacts</a>
+        <a href="#">Contact</a>
         <ul class="dropdown">
-          <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail.com</a></li>
+          <li><a href="mailto:Quincy.m.bush@gmail.com">Email<br>Quincy.m.bush@gmail</a></li>
           <li><a href="#">Phone :507-884-9868</a></li>
-          
-        </ul>
+         </ul>
       </li>
+
+
+
       <li><a href="https://www.linkedin.com/in/quincy-bush/" target="_blank"> LinkedIN</a></li>
       
       <li class="has-dropdown">
-        <a href="#">Resume and Recommendations</a>
+        <a href="#">Resume and Recommendation</a>
         <ul class="dropdown">
-      <li><a href="WebPages/Recommendation.html" > Letter of <br>Recommendation</a></li>
+      <li><a href="pictures/Recommendation-Quincy Bush.jpg" target="_blank"> Letter of <br>Recommendation</a></li>
       <li><a href="WebPages/Resume.html" > Resume</a></li>
 
     </ul>
     </nav>
   </div>
-  
+      <section class="content-card" style="margin-top: 40px;">
+    <div class="content-header">
+      <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank">
+      <img src="pictures/HeadSHot.jpg" alt="Quincy Bush Headshot" class="profile-pic" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:16px;">
+      </a>
+      <h1>Hi, I'm Quincy Bush</h1>
+      <div class="tagline">Aspiring Software Engineer & Web Developer</div>
+      <div class="contact-info">
+        <a href="mailto:Quincy.m.bush@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/quincy-bush/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Quincy-Bush" target="_blank">GitHub</a>
+      </div>
+      <a class="download-btn" href="pictures/Resume (feb 28th).pdf" target="_blank" download>Download Resume</a>
+    </div>
+    <p style="text-align:center;max-width:600px;margin:24px auto 0 auto;">
+      I’m a graduate of the University of Minnesota (Spring 2024) with a passion for building software. My journey began with video games and evolved into a love for coding, teamwork, and creative problem-solving. With my use of time-management, hard work, communication and an affirmative mindset I was able to put myself through college while working part-time.<br>
+      I have used these skills to stay successful in customer support and client support service roles and ready to apply them to my future work in software development and web design. I am currently seeking opportunities to contribute as a software engineer and grow with a collaborative, forward-thinking team to refine the skills necessary for a successful career.
+    </p>
+  </section>
 
-
-  <header class ="hero">
-    <div class="container">
-      <div class="profile">
-        <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank"><img src="pictures/HeadSHot.jpg" alt="HeadShot" class="profile-pic">
-        </a><h1 class ="name"> Quincy</h1>
-        <p class="tagline"> Aspiring Software Engineer</p>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2 class="section-title">Featured Project</h2>
+    <!-- Flip Card Example -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h2>Featured Project: Interactive Portfolio</h2>
+          <p>An interative graphics program to showcase skills and eventually other projects.
+          </p>
+          <button class="flip-btn" aria-label="Show Details">See Details</button>
+        </div>
+        <div class="flip-card-back">
+          <h2>Key Details</h2>
+          <ul>
+            <li>Responsive design for desktop and mobile devices</li>
+      	    <li>Dynamic game enviorment and logic pertaining to sprite animation and camera movement via Javascript</li>
+            <li>HTML canvas, element packaging, and scripting to create a User interface</li>
+             <a class="download-btn" href="https://quincy-bush.github.io/Interactive-Portfolio/" target="_blank" download>Run Project</a>
+             <a class="download-btn" href="https://github.com/Quincy-Bush/Interactive-Portfolio" target="_blank" download>Download Project</a>
+          </ul>
+          <button class="flip-btn" aria-label="Back to Overview">Back</button>
+        </div>
       </div>
     </div>
-  </header>
+    <!-- Add more flip cards for other projects as needed -->
+  </section>
+
+
+
+  
   
 
-
+<!--
 <section class="about">
-  <div class ="container">
+  <div class ="content-card">
   
-   <h2>About Me:</h2> 
+   <h1>About Me:</h1> 
   <p>
     I am a recent graduate of the University of Minnesota(Spring 2024) and an aspiring Software Engineer.
-    <br>My interest in computer science began with video games at a young age,
-    <br> and have expanded as I learned to build computers, write programs, and so more as I grew older. 
-    <br>I've spent most of my adult life in service, and I am looking forward to applying my knowledge and experience to lead me to a successful career in software development. 
-    <br>If you're interested, feel free to explore my online portfolio to learn more! 
+    My interest in computer science began with video games at a young age,
+    and have expanded as I learned to build computers, write programs, and so much more as I grew older.<br> 
+    I've spent most of my adult life in service, and I am looking forward to applying my knowledge and experience to lead me to a successful career in software development. 
+    If you're interested, feel free to explore my online portfolio to learn more! 
   </p>
   
   </div>
 </section>
+-->
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class=" flip-card-front">
+      <!-- Front side content here -->
+      <h2>What are my skills?</h2>
 
+     <!-- <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank"><img src="pictures/HeadSHot.jpg" alt="HeadShot" class="profile-pic">
+        </a>  -->
+      
+      <button class="flip-btn">Flip</button>
 
-  <section class="skills">
-    <div class="container">
-      <h2>Skills</h2>
+    </div>
+    <div class=" flip-card-back">
+      <!-- Back side content here -->
+      <h2>Back Side</h2>
+
       <div class="skills-list">
         <div class="skill"> HTML</div>
         <div class="skill"> CSS</div>
@@ -94,7 +149,7 @@
         <div class="skill"> PHP</div>
         <div class="skill"> x86-64 Assembly Language</div>
         <div class="skill"> UML</div>
-        <div class="skill"> Compute/Machine Architecture</div>
+        <div class="skill"> Computer/Machine Architecture</div>
         <div class="skill"> Mathematics & Discrete Structures<br> thereof</div>
         <div class="skill"> Data Visualization</div>
         <div class="skill"> Application Programming Interfaces</div>
@@ -106,12 +161,27 @@
         
         
       </div>
+    
+
+      <button class="flip-btn">Flip Back</button>
     </div>
-  </section>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class=" flip-card-front">
+      <!-- Front side content here -->
+      <h2>What projects have I done?</h2>
+
+     <!-- <a href="https://youtu.be/owzUS0R7Ny8?t=6242" target="_blank"><img src="pictures/HeadSHot.jpg" alt="HeadShot" class="profile-pic">
+        </a>  -->
       
-   
-  <section class="projects">
-    <div class="container">
+      <button class="flip-btn">Flip</button>
+
+    </div>
+    <div class=" flip-card-back">
+      <!-- Back side content here -->
+      
       <h2>Projects</h2>
       <div class="project-list">
         
@@ -120,7 +190,7 @@
         
         <div class="project"> <h3>Interactive Portfolio</h3> 
           <p>
-            An iterative graphics program to showcase skills and past projects.
+            An interative graphics program to showcase skills and past projects.
           </p>
         </div>
       </a>
@@ -133,31 +203,17 @@
           </p>
         </div>
       </a>
-      <a href="https://quincy-bush.github.io/Portfolio/WebPages/IterativeGraphicsGames.html" target = "_blank" > 
+      <a href="https://quincy-bush.github.io/Portfolio/WebPages/InterativeGraphicsGames.html" target = "_blank" > 
         
-        <div class="project"> <h3>Iterative Graphics Projects</h3> 
+        <div class="project"> <h3>Interative Graphics Projects</h3> 
           <p>
-            A collection of iterative graphics programs of showcasing proficency and time managment in the 
+            A collection of interative graphics programs of showcasing proficency and time managment in the 
             aformentioned field.
           </p>
         </div>
       </a>
 
-      <a href="https://quincy-bush.github.io/Portfolio/WebPages/PuzzleBox.html" target = "_blank" > 
-        <div class="project"> <h3>Puzzle Box Debugging Bomb</h3> 
-          <p>
-            A project designed to develop further experience in GNU project debugger and C.
-          </p>
-        </div>
-      </a>
-      <a href="https://quincy-bush.github.io/Portfolio/WebPages/DroneShare.html" target = "_blank" > 
-        <div class="project"> <h3>Rideshare Simulation Project</h3> 
-          <p>
-            A UMN captsone project designed to teach the standard methodologies, business practices and time management for 
-            software development.
-          </p>
-        </div>
-      </a>
+      
       <a href="https://quincy-bush.github.io/Portfolio/WebPages/BDPA.html" target = "_blank" > 
        
         <div class="project"> <h3>Black Data Processing Associates</h3> 
@@ -167,26 +223,51 @@
         </div>
       </a>
       </div>
+    
+      <button class="flip-btn">Flip Back</button>
+    </div>
+  </div>
+</div>
+
+ <!-- About Section -->
+  <section id="about" class="content-card">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I thrive on learning new technologies and collaborating with others to solve real-world problems. My experience spans web development, UI/UX design, and teamwork in both academic and professional settings. I’m committed to continuous growth and delivering high-quality, user-focused solutions.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content-card">
+    <h2 class="section-title">Contact</h2>
+    <p>
+      Interested in working together or want to know more? Reach out!
+    </p>
+    <div class="contact-info">
+      <a href="mailto:Quincy.m.bush@gmail.com">Quincy.m.bush@gmail.com</a>
+      <a href="https://www.linkedin.com/in/quincy-bush/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
     </div>
   </section>
-   
-    
-    
-    
-    
-       
-       
-  <footer> 
-    <address>
-     Available at <a href="Quincy.m.bush@gmail.com">Quincy.M.Bush@gmail.com</a>.<br>
-     Copyright © 2025 Quincy Bush — All Rights Reserved.<br>
-      
-     </address> 
-   </footer>
-  
-          
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Quincy Bush &mdash; Portfolio. All rights reserved.
+  </footer>
+
+
 
    <script src="script.js"></script>
-	
+   <script>
+  document.querySelectorAll('.flip-card').forEach(function(card) {
+    card.querySelectorAll('.flip-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        card.classList.toggle('flipped');
+      });
+    });
+  });
+</script>
    </body>
 </html>
+
+
